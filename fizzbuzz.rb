@@ -1,4 +1,6 @@
 def fizzbuzz(int)
+  # I suspect that calculating the mod here instead of 
+  # in the conditionals will be more CPU efficient.
   mod_3 = int % 3
   mod_5 = int % 5
 
