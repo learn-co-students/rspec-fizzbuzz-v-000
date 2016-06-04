@@ -19,7 +19,7 @@ describe "fizzbuzz" do
 it 'returns "fizzbuzz" when the number is divisible by 3 and 5'do
     fizz_15 = fizzbuzz(15)
 
-    expect (fizz_15).to eq("fizzbuzz")
+    expect(fizz_15).to eq("fizzbuzz")
   end
 end
 
