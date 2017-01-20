@@ -1,20 +1,11 @@
 def fizzbuzz (n)
-  if (divisible(n,3) && divisible(n,5))
-  	return("FizzBuzz")
-  end
-  if divisible(n,3) 
-  	return("Fizz")
-end
-  if (divisible(n,5) && !divisible(n,3)) 
-  	return("Buzz")
-    
-  else return nil
-  end
-end
+  if n % 3 == 0 && n % 5 == 0
+    "FizzBuzz"
 
-def divisible (m, n)
-if m%n==0
-return true
-	else return false
+    elsif n % 3 == 0 
+    "Fizz"
+
+    elsif n % 5 == 0
+  	"Buzz"
   end
 end
