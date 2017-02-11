@@ -8,7 +8,7 @@ elsif int % 3 == 0
 elsif int % 5 == 0
   "Buzz"
 
-else (int % 3 != 0) && (int % 5 != 0)
+else 
   nil
   end
 end
