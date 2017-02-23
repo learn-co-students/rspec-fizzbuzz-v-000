@@ -1,6 +1,27 @@
 require_relative './spec_helper.rb'
 require_relative '../fizzbuzz.rb'
 
+
+def fizzbuzz (int)
+if int % 3 == 0 #if the number int is divided by 3
+  "Fizz" #Go fizz
+end
+  end
+
+def fizzbuzz (int)
+  if int % 5 == 0 #if the number int is divisible by 5
+    "Fizz" #Go fizz
+  end
+    end
+
+
+  def fizzbuzz (int)
+    if int % 15 == 0 #if the number int is divisible by 3 and 5
+      "Fizz" #Go fizz
+    end
+      end
+
+
 describe "fizzbuzz" do
   it 'returns "Fizz" when the number is divisible by 3' do
     fizz_3 = fizzbuzz(3)
