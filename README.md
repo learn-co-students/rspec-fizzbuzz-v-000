@@ -381,19 +381,6 @@ Now, when we run `learn`, we should expect to see a new sort of error.
 
 ## A Bit About Your Test Vs Your Program
 
-Run: `learn`
-
-```
-  1) fizzbuzz returns "Fizz" when the number is divisible by 3
-     Failure/Error: fizz_3 = fizzbuzz(3)
-     
-     NoMethodError:
-       undefined method `fizzbuzz' for #<RSpec::Core::ExampleGroup::Nested_1:0x007fd2f21083b8>
-     # ./spec/fizzbuzz_spec.rb:5:in `block (2 levels) in <top (required)>'
-```
-
-Don't panic! It's the same exact failure, our old friend `NoMethodError`, as though we never defined `#fizzbuzz`. But look, after all this, we finally did some work and added a clearly defined `#fizzbuzz` method to `fizzbuzz.rb`. So why is the test still complaining?
-
 Let's try loading a Ruby environment from within our project directory and playing with the `#fizzbuzz` method ourselves for a second.
 
 From within `rspec-fizzbuzz-v-000`, fire up `irb`, the Interactive Ruby Shell, a real-time Ruby prompt for executing arbitrary code. For instance:
@@ -426,16 +413,9 @@ There's our error. We tried calling `#fizzbuzz` and IRB complains that it doesn'
 
 As you can see, by requiring the `fizzbuzz.rb` file, we were able to call the `#fizzbuzz` method.
 
-Let's add that requirement to our RSpec test suite, so that our tests know to load the code they're supposed to be testing.
+This requirement is already added to our RSpec test suite, so that our tests know to load the code they're supposed to be testing.
 
-Edit: `spec/fizzbuzz_spec.rb`
-
-```ruby
-require_relative './spec_helper.rb'
-require_relative '../fizzbuzz.rb'
-```
-
-Now we're telling `fizzbuzz_spec.rb` to load both `spec_helper.rb` and `fizzbuzz.rb`.
+So this is telling `fizzbuzz_spec.rb` to load both `spec_helper.rb` and `fizzbuzz.rb`.
 
 Run the test suite one more time with `learn`. You should see failures in line with the following:
 
@@ -449,7 +429,7 @@ Run the test suite one more time with `learn`. You should see failures in line w
      # ./spec/fizzbuzz_spec.rb:6:in `block (2 levels) in <top (required)>'
 ```
 
-Read that error message; it's brand new! Getting a new error message is a sign of progress. It's one more hint the computer is giving you, one more clue to drive your investigation forward. Now it's complaining that our tests are calling the `#fizzbuzz` method with an argument; however, our definition of `#fizzbuzz` accepts no arguments. You'll fix that next, but it's important to realize our test suite is now wired up correctly. We can continue building out our `#fizzbuzz` method and running our specs against that code until we have it working.
+Read that error message; Now it's complaining that our tests are calling the `#fizzbuzz` method with an argument; however, our definition of `#fizzbuzz` accepts no arguments. You'll fix that next, but it's important to realize our test suite is now wired up correctly. We can continue building out our `#fizzbuzz` method and running our specs against that code until we have it working.
 
 ## Continuing to Solve Fizzbuzz
 
