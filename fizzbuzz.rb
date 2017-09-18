@@ -1,6 +1,10 @@
 def fizzbuzz(number)
-  "Fizz"
-  
+  if number % 3 == 0 && number % 5 == 0
+    "FizzBuzz"
+elsif number % 5 == 0
+    "Buzz"
 
-end#require_relative './spec_helper.rb'
-#require_relative '..fizzbuzz.rb'
+    elsif number % 3 == 0
+    "Fizz"
+end
+end
