@@ -7,15 +7,3 @@ def fizzbuzz(play)
  "Fizz"
  end
 end
-=begin elsif play % 3 == 0
-    print "Fizz"
-  elsif play % 5 == 0
-    print "Buzz"
-  else
-    puts nil
- end
-end
-fizzbuzz(3)
-fizzbuzz(5)
-fizzbuzz(15)
-=end
