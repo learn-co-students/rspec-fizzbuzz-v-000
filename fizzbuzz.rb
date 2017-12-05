@@ -1,19 +1,19 @@
 def fizzbuzz(number)
 
   if (((number % 3) == 0) && ((number % 5) == 0))
-    puts "FizzBuzz"
+    #puts "FizzBuzz"
     return ("FizzBuzz")
 
   elsif ((number % 3) == 0)
-    puts "Fizz"
+    #puts "Fizz"
     return ("Fizz")
 
   elsif ((number % 5) == 0)
-    puts "Buzz"
+    #puts "Buzz"
     return ("Buzz")
 
   else
-    puts nil
+    #puts nil
     return (nil)
   end
 
