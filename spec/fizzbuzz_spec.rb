@@ -1,5 +1,17 @@
 require_relative './spec_helper.rb'
 
+def fizzBuzz(number)
+  if number % 3 == 0 && number % 5 == 0
+    "FizzBuzz"
+  elsif number % 3 == 0
+    "Fizz"
+  elsif number % 5 == 0
+    "Buzz"
+  else
+    number
+  end
+end
+
 describe "fizzbuzz" do
   it 'returns "Fizz" when the number is divisible by 3' do
     fizz_3 = fizzbuzz(3)
