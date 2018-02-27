@@ -1,8 +1,17 @@
 def fizzbuzz(int)
   if int % 3 == 0 # if the number int is divisible by 3
-    "Fizz" # Go fizz
+      if int % 5 == 0 # if the number int is also divisible by 5
+        "FizzBuzz" 
+      else
+        "Fizz"
+      end
   elsif int % 5 == 0 # if the number int is divisible by 5
-    "Buzz" # Go buzz
-  else int % 15 == 0 # if the number int is divisible by 15
-    "FizzBuzz" # Go fizzbuzz
+    if int % 3 == 0 # if the number int is also divisible by 3
+      "FizzBuzz"
+    else
+      "Buzz"
+    end
+  else
+    nil # if the number int is divisible by none, return nil
+  end
 end
