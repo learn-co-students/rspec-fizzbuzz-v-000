@@ -1,11 +1,11 @@
 def fizzbuzz(x)
- if ((x % 3 && x % 5) == 0)
-    "FizzBuzz"
-  elsif (x % 3) == 0
-    "Fizz"
-  elsif (x % 5) == 0 
-    "Buzz"
+ if x % 3 == 0 && x % 5 == 0
+   then x = "FizzBuzz"
+  elsif x % 3 == 0
+    then x = "Fizz"
+  elsif x % 5 == 0 
+    then x = "Buzz"
   else
-    nil
+    x = nil
   end
 end
