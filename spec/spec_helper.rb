@@ -7,7 +7,7 @@
 
 # NOTE: If you uncomment the following line,
 # you won't encounter the `undefined method \`fizzbuzz'`
-# error described in the README
+# error described in the README 
 # require_relative "../fizzbuzz"
 RSpec.configure do |config|
   config.run_all_when_everything_filtered = true
@@ -19,3 +19,6 @@ RSpec.configure do |config|
   #     --seed 1234
   config.order = 'default'
 end
+
+require_relative './spec_helper.rb'
+require_relative '../fizzbuzz.rb'
