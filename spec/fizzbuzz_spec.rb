@@ -1,24 +1,51 @@
-require_relative './spec_helper.rb'
-
-describe "fizzbuzz" do
-  it 'returns "Fizz" when the number is divisible by 3' do
-    fizz_3 = fizzbuzz(3)
-
-    expect(fizz_3).to eq("Fizz")
+def fizz_buzz_1(max)
+  arr = []
+  (1..max).each do |n|
+    if ((n % 3 == 0) && (n % 5 == 0))
+      arr << "FizzBuzz"
+    elsif (n % 3 == 0)
+      arr << "Fizz"
+    elsif (n % 5 == 0)
+      arr << "Buzz"
+    else
+      arr << n
+    end
   end
-  it 'returns "Buzz" when the number is divisible by 5' do
-    fizz_5 = fizzbuzz(5)
+  return arr
+end
 
-    expect(fizz_5).to eq("Buzz")
+def fizz_buzz_2(max)
+  arr = []
+  (1..max).each do |n|
+    if (n % 3 == 0)
+      if (n % 5 == 0)
+        arr << "FizzBuzz"
+      else
+        arr << "Fizz"
+      end
+    elsif (n % 5 == 0)
+      arr << "Buzz"
+    else
+      arr << n
+    end
   end
-  it 'returns "FizzBuzz" when the number is divisible by 3 and 5' do
-    fizz_15 = fizzbuzz(15)
+  return arr
+end
 
-    expect(fizz_15).to eq("FizzBuzz")
+def fizz_buzz_3(max)
+  arr = []
+  (1..max).each do |n|
+    text = ""
+    if (n % 3 == 0)
+      text << "Fizz"
+    end
+    if (n % 5 == 0)
+      text << "Buzz"
+    end
+    if !((n % 3 == 0) || (n % 5 == 0))
+      text = n
+    end
+    arr << text
   end
-  it 'returns nil when the number is not divisible by 3 or 5' do
-    fizz_4 = fizzbuzz(4)
-
-    expect(fizz_4).to eq(nil)
-  end
+  return arr
 end
