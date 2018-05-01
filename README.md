@@ -405,6 +405,7 @@ Let's try loading a Ruby environment from within our project directory and playi
 
 From within `rspec-fizzbuzz-v-000`, fire up `irb`, the Interactive Ruby Shell, a real-time Ruby prompt for executing arbitrary code. For instance:
 
+
 ```
 // ♥ irb
 2.2.3 :001 > 1+1
