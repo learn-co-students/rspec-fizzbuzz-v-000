@@ -1,17 +1,17 @@
-def fizzbuzz(int)
-  if (int % 3 == 0 && int % 5 == 0)
-    "FizzBuzz"
-  
-  elsif int % 5 == 0
-    "Buzz"
+#fizz = 3
 
-  
-  elsif int % 3 == 0 
+#buzz = 5
+
+#fizzbuzz % by 3 and 5
+
+def fizzbuzz(integer)
+  if integer % 3 == 0 && integer % 5 == 0 
+    "FizzBuzz" 
+  elsif integer % 3 == 0
     "Fizz"
-    
-  else !(int % 3 == 0 || int % 5 == 0)
-    nil 
-    
-    end 
-  end
-
+  elsif integer % 5 == 0
+    "Buzz"
+  else 
+    nil
+  end 
+end 
