@@ -1,3 +1,3 @@
-define fizzbuzz
+def fizzbuzz
 
 end
