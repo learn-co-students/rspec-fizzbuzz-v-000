@@ -1,16 +1,14 @@
-def fizzbuzz(number)
-if (number % 3 == 0) && (number % 5 == 0)
-        return "FizzBuzz"
+def fizzbuzz(x)
+end
 
+if (fizzbuzz/3)
+puts "Fizz"
 
-    elsif  number % 5 == 0
-        return "Buzz"
+elsif(fizzbuzz/5)
+puts "Buzz"
 
-    elsif number % 3 == 0
-            return "Fizz"
+elsif(fizzbuzz/5 && fizzbuzz/3)
+puts "FizzBuzz"
 
-elsif number % 4 == 0
-  return nil
-
-      end
-    end
+else puts "nil"
+end
