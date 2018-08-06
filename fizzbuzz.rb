@@ -3,18 +3,16 @@
 def fizzbuzz (num)
 # We expect fizzbuzz(15) to return "FizzBuzz"
   if (num % 3 == 0 && num % 5 == 0)
-    puts "FizzBuzz"
-  end
-# We expect fizzbuzz(3) to return "Fizz"
-  if (num % 3 == 0)
-    puts "Fizz"
+    return "FizzBuzz"
   end
 # We expect fizzbuzz(5) to return "Buzz"
   if (num % 5 == 0)
-    puts "Buzz"
+    return "Buzz"
   end
+# We expect fizzbuzz(3) to return "Fizz"
+  if (num % 3 == 0)
+    return "Fizz"
+  end
+
 # return nil number not divisible
-  else
-    puts nil
-  end
 end
