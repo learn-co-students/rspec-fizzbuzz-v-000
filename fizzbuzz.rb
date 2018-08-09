@@ -2,19 +2,12 @@
 # See README.md for instructions on how to do this
 
 
-
-
 def fizzbuzz(int)
-  if int % 3 == 0 
-    puts "Fizz"
   
-  elsif int % 5 == 0 
-    puts "Buzz"
-
-  elsif int 15 % == 0
-    puts "Fizzbuzz"
-    
-  else int % 4 == 0
-    puts nil
-  end
+return int % 15 == 0 ? "FizzBuzz" : int % 5 == 0 ? "Buzz" :
+  int % 3 == 0 ? "Fizz" : int % 3 != 0 && int % 5 != 0  ? nil : int;
 end
+
+
+
+
