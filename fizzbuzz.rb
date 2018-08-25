@@ -1,11 +1,11 @@
-def fizzbuzz(int)
-if int % 3 == 0 && int % 5 == 0
+def fizzbuzz(num)
+  if num % 15 == 0
     "FizzBuzz"
-elsif int % 3 == 0
+  elsif num % 3 == 0
     "Fizz"
-elsif int % 5 == 0
+  elsif num % 5 == 0
     "Buzz"
-else int % 4 == 0
+  else
     nil
   end
 end
