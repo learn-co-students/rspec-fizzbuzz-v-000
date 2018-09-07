@@ -1,11 +1,11 @@
 def fizzbuzz(int)
-  if int % 3 # if the number int is divisible by 3
-    "Fizz"
-    elseif int % 5
+  if int % 15 == 0
+    "FizzBuzz"# if the number int is divisible by 3
+  elsif int % 5 == 0
     "Buzz"
-    elseif int % 15
-    "FizzBuzz"
-  else int % 4
-    "nil"
+  elsif int % 3 == 0
+    "Fizz"
+  else int % 4 == 0
+    nil
+    end
   end
-end
