@@ -1,6 +1,18 @@
 require_relative './spec_helper.rb'
 # We are missing a 'require_relative' here. Check README.md for instructions and an explanation! 
 
+def fizzbuzz(int)
+  if int % 3 == 0 && int % 5 == 0
+    return 'FizzBuzz'
+  elsif int % 3 == 0
+    return 'Fizz'
+  elsif int % 5 ==  0
+    return 'Buzz'
+  else
+    return nil
+  end
+end
+
 describe "fizzbuzz" do
   it 'returns "Fizz" when the number is divisible by 3' do
     fizz_3 = fizzbuzz(3)
