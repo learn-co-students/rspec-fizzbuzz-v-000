@@ -439,7 +439,7 @@ Edit: `spec/fizzbuzz_spec.rb`
 
 ```ruby
 require_relative './spec_helper.rb'
-require_relative '../fizzbuzz.rb'
+
 ```
 
 Now we're telling `fizzbuzz_spec.rb` to load both `spec_helper.rb` and `fizzbuzz.rb`.
